@@ -1,0 +1,183 @@
+# ════════════════════════════════════════════════════════
+#   Vijay Yadav — Portfolio Site  |  _config.yml
+#   GitHub Pages / Jekyll Configuration
+#   Last updated: 2026
+# ════════════════════════════════════════════════════════
+
+
+# ── Core Identity ────────────────────────────────────────
+title:        "Vijay Yadav | Cybersecurity Researcher"
+tagline:      "Cybersecurity Researcher · AI Security · Digital Forensics"
+description:  >
+  Portfolio of Vijay Yadav — Cybersecurity Researcher, AI Security Engineer,
+  and Digital Forensics Expert. 2× Patent published. Active member of OWASP,
+  Internet Society, ODSC, and UK Cyber Security Council. Explore internships
+  across 8+ countries, projects, certifications, and global community work.
+
+author:
+  name:  "Vijay Yadav"
+  email: "vijayyadavvj31@gmail.com"
+  bio:   >
+    B.Tech ECE student at KIET Group of Institutions (AKTU). Cybersecurity
+    researcher with hands-on experience in AI security, threat intelligence,
+    penetration testing, secure cloud development, and digital forensics.
+  location: "Delhi, India"
+  avatar:   "/assets/images/avatar.jpg"   # replace with your actual photo path
+
+
+# ── Site URL ─────────────────────────────────────────────
+url:      "https://vijayleo31.github.io"   # update to your GitHub Pages URL
+baseurl:  ""                               # leave empty for root deployment
+
+
+# ── Social & Contact ─────────────────────────────────────
+social:
+  linkedin:  "vijay-yadavvgrapher"
+  github:    "vijayleo31"
+  youtube:   "UC0JbxVyQcwif84dahCMpnSg"
+  email:     "vijayyadavvj31@gmail.com"
+
+
+# ── SEO & Metadata ───────────────────────────────────────
+lang:      "en-IN"
+timezone:  "Asia/Kolkata"
+locale:    "en_IN"
+
+# Open Graph / Twitter Card
+og:
+  type:        "website"
+  image:       "/assets/images/og-cover.png"   # 1200×630 recommended
+  twitter_card: "summary_large_image"
+
+
+# ── Navigation Sections ──────────────────────────────────
+nav:
+  - label: "Global Impact"
+    id:    "communities"
+    order: 1
+  - label: "About"
+    id:    "about"
+    order: 2
+  - label: "Experience"
+    id:    "experience"
+    order: 3
+  - label: "Projects"
+    id:    "projects"
+    order: 4
+  - label: "Certifications"
+    id:    "certifications"
+    order: 5
+  - label: "Contact"
+    id:    "contact"
+    order: 6
+
+
+# ── Typography (Google Fonts used in site) ───────────────
+fonts:
+  headings:     "Playfair Display"   # weights: 400, 600, 700, 800
+  body:         "Raleway"            # weights: 300, 400, 500, 600, 700
+  descriptions: "EB Garamond"        # weights: 400, 500, 600
+  monospace:    "DM Mono"            # weights: 400, 500
+  google_fonts_url: >
+    https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800
+    &family=EB+Garamond:wght@400;500;600
+    &family=DM+Mono:wght@400;500
+    &family=Raleway:wght@300;400;500;600;700
+    &display=swap
+
+
+# ── Theme & Appearance ───────────────────────────────────
+theme_config:
+  default_mode:    "dark"        # dark | light (user can toggle)
+  color_primary:   "#ff2233"     # red accent
+  color_bg_dark:   "#000000"
+  color_bg_light:  "#fdf5f5"
+  border_radius:   "0"           # sharp edges — minimal/tech aesthetic
+  enable_3d_bg:    true          # Three.js particle + wireframe background
+  enable_globe:    true          # rotating globe in Global Impact section
+  custom_cursor:   true          # custom red ring cursor
+
+
+# ── Community Memberships ────────────────────────────────
+communities:
+  - name:     "OWASP® Foundation"
+    role:     "Member"
+    since:    "2025-09"
+    location: "Global"
+    url:      "https://owasp.org"
+
+  - name:     "Internet Society"
+    role:     "Member"
+    since:    "2025-07"
+    location: "Reston, Virginia, USA"
+    url:      "https://www.internetsociety.org"
+
+  - name:     "Open Data Science Conference (ODSC)"
+    role:     "Member"
+    since:    "2025-04"
+    location: "Massachusetts, USA"
+    url:      "https://odsc.com"
+
+  - name:     "UK Cyber Security Council"
+    role:     "Member"
+    since:    "2025-05"
+    location: "United Kingdom"
+    url:      "https://www.ukcybersecuritycouncil.org.uk"
+
+  - name:     "CS2AI Global"
+    role:     "Member"
+    start:    "2025-03"
+    end:      "2025-09"
+    location: "Georgia, USA"
+    url:      "https://www.cs2ai.org"
+
+
+# ── Achievements ─────────────────────────────────────────
+achievements:
+  patents: 2
+  hackathon_top10: 6
+  smart_india_hackathon: 2
+  international_conferences: 30
+  countries_collaborated: 8
+  internships: 10
+
+
+# ── Build Settings ───────────────────────────────────────
+theme:        jekyll-theme-minimal
+markdown:     kramdown
+highlighter:  rouge
+permalink:    pretty
+
+kramdown:
+  input:               GFM
+  hard_wrap:           false
+  syntax_highlighter:  rouge
+
+# Sass (if adding custom stylesheets alongside the HTML)
+sass:
+  style:            compressed
+  sass_dir:         _sass
+
+
+# ── Plugins ──────────────────────────────────────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+
+# ── File Exclusions ──────────────────────────────────────
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - "*.sh"
+  - .DS_Store
+  - .gitignore
+
+include:
+  - index.html
+  - _config.yml
+  - assets/
