@@ -1,0 +1,63 @@
+# ─────────────────────────────────────────────
+#  Vijay Yadav — Portfolio Site Configuration
+# ─────────────────────────────────────────────
+
+theme: jekyll-theme-minimal
+
+# ── Site Identity ──────────────────────────
+title: Vijay Yadav | Cybersecurity Researcher
+description: >
+  Portfolio of Vijay Yadav — Cybersecurity Researcher, AI Security Engineer,
+  and Digital Forensics Expert. Explore internships, patents, global community
+  memberships (OWASP, Internet Society, ODSC, UK Cyber Security Council),
+  projects, certifications, and research in cybersecurity and AI security.
+
+author: Vijay Yadav
+email: vijayyadavvj31@gmail.com
+url: "https://vijay-yadavvgrapher.github.io"
+
+# ── SEO & Social ───────────────────────────
+lang: en
+timezone: Asia/Kolkata
+
+social:
+  linkedin: vijay-yadavvgrapher
+  youtube: UC0JbxVyQcwif84dahCMpnSg
+
+# ── Navigation ─────────────────────────────
+nav_links:
+  - title: Global Impact
+    url: "#communities"
+  - title: About
+    url: "#about"
+  - title: Experience
+    url: "#experience"
+  - title: Projects
+    url: "#projects"
+  - title: Certifications
+    url: "#certifications"
+  - title: Contact
+    url: "#contact"
+
+# ── Build Settings ─────────────────────────
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# ── Plugins ────────────────────────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ── Exclude from Build ─────────────────────
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
